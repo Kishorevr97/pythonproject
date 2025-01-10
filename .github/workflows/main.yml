@@ -1,0 +1,11 @@
+name: self hosted workflow
+run-name: self hosted
+on:
+  push
+jobs:
+  echo-trigger:
+    runs-on: self-hosted
+    steps:
+      - name: self hosted
+        run: echo "workflow valid"
+    
