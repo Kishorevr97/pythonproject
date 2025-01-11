@@ -9,8 +9,8 @@ jobs:
      - name: github_context
        run: |
          echo "name of the action ${{github.action}}"
-         echo "name of the step ${{github.action_ref}}"
-         echo "repository name of the action ${{github.action_repository}}"
+         echo "repository name ${{github.repository}}"
+         echo "name of the workflow ${{github.workflow}}"
          echo "username  ${{github.actor}}"
          echo "The account ID of the person ${{github.actor_id}}"
          echo "The job_id of the current job ${{github.job}}"
