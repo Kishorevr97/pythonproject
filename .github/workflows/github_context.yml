@@ -10,13 +10,13 @@ jobs:
        run: |
          echo "name of the action ${{github.action}}"
          echo "name of the step ${{github.action_ref}}"
-         echo "name of the step ${{github.action_repository}}"
-         echo "name of the step ${{github.actor}}"
-         echo "name of the step ${{github.actor_id}}"
-         echo "name of the step ${{github.job}}"
-         echo "name of the step ${{github.ref}}"
-         echo "name of the step ${{github.run_number}}"
-         echo "name of the step ${{github.workspace}}"
+         echo "repository name of the action ${{github.action_repository}}"
+         echo "username  ${{github.actor}}"
+         echo "The account ID of the person ${{github.actor_id}}"
+         echo "The job_id of the current job ${{github.job}}"
+         echo "ref of the branch ${{github.ref}}"
+         echo "unique number for each run ${{github.run_number}}"
+         echo "The name of the workflow ${{github.workspace}}"
          
          
 
