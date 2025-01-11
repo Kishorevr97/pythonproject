@@ -1,0 +1,13 @@
+name: vars workflow
+run-name: vars
+on:
+ push
+jobs:
+  vars_context:
+    runs-on: ubuntu-latest
+    steps:
+     - name: vars_context
+       run:
+        echo " name of the variable is ${{vars.Tool}}
+  
+  
