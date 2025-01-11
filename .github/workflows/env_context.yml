@@ -6,7 +6,7 @@ on:
   push
 jobs:
   env_context:
-    runs-on: ubuntu latest
+    runs-on: ubuntu-latest
     env:
       name: kishore_job
     steps:
