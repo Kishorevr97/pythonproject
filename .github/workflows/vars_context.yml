@@ -8,6 +8,6 @@ jobs:
     steps:
      - name: vars_context
        run:
-        echo " name of the variable is ${{vars.Tool}}
+        echo " name of the variable is ${{vars.Tool}}"
   
   
