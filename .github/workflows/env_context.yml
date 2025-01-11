@@ -1,0 +1,17 @@
+name: env workflow
+run-name: env
+env:
+  name: kishore_workflow
+on:
+  push
+jobs:
+  env_context:
+    runs-on: ubuntu latest
+    env:
+      name: kishore_job
+    steps:
+      - name: env_context
+        env:
+          name: kishore_step
+        run: |
+          echo " env variable ${{env.name}}
