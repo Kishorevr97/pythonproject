@@ -1,0 +1,22 @@
+name: github_context workflow
+run-name: github-context
+on:
+ push
+jobs:
+  github_context:
+    runs-on: ubuntu-latest
+    steps:
+     - name: github_context
+       run: |
+         echo "name of the action ${{github.action}}"
+         echo "name of the step ${{github.action_ref}}"
+         echo "name of the step ${{github.action_repository}}"
+         echo "name of the step ${{github.actor}}"
+         echo "name of the step ${{github.actor_id}}"
+         echo "name of the step ${{github.job}}"
+         echo "name of the step ${{github.ref}}"
+         echo "name of the step ${{github.run_number}}"
+         echo "name of the step ${{github.workspace}}"
+         
+         
+
