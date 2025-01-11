@@ -14,4 +14,4 @@ jobs:
         env:
           name: kishore_step
         run: |
-          echo " env variable ${{env.name}}
+          echo "env variable ${{env.name}}"
