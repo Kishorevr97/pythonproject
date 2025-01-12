@@ -1,5 +1,5 @@
 name: matrix workflow
-run-name: matrix
+run-name: matrix | debug - DEBUG ${{inputs.debug}} 
 on:
  workflow_dispatch:
    inputs:
