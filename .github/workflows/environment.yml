@@ -14,7 +14,8 @@ jobs:
     runs-on: ubuntu-latest
     environment: ${{inputs.Environment}}
     steps:
-      - name: name of the environment
+      - name: name of the variable
         run: echo "name of the variable ${{vars.devvariable}}"
-      - run: echo "name of secrets ${{secrets.devsecret}}"
+      - name: name of the secrets
+        run: echo "name of secrets ${{secrets.devsecret}}"
       
