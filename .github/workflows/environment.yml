@@ -15,5 +15,6 @@ jobs:
     environment: ${{inputs.Environment}}
     steps:
       - name: name of the environment
-        run: echo "name of secrets ${{secrets.devsecret}}"
-      - run: echo "name of the variable ${{vars.devvariable}}"
+        run: echo "name of the variable ${{vars.devvariable}}"
+      - run: echo "name of secrets ${{secrets.devsecret}}"
+      
