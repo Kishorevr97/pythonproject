@@ -7,7 +7,7 @@ on:
     inputs:
       Environment:
         type: environment
-        default: devolopment
+        default: development
  
 jobs:
   environment:
